@@ -7,35 +7,57 @@
   <meta name="description" content="Política de privacidad del canal de WhatsApp de DAEH para trámites de personal.">
   <style>
     :root { color-scheme: light; }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      color: #1c1c1c;
-      background: #f7f5f2;
-      line-height: 1.55;
+      min-height: 100vh;
+      font-family: "Segoe UI", sans-serif;
+      color: #1c1915;
+      background: #fff;
+      line-height: 1.6;
+    }
+    .fondo {
+      width: min(36rem, calc(100% - 2.5rem));
+      margin: 1.75rem auto 0;
+      aspect-ratio: 1024 / 439;
+      background: #fff url("marca-daeh.jpg") center / contain no-repeat;
     }
     main {
       max-width: 40rem;
       margin: 0 auto;
-      padding: 2.5rem 1.25rem 4rem;
+      padding: 1.5rem 1.25rem 4rem;
     }
-    h1 { font-family: "Segoe UI", sans-serif; font-size: 1.8rem; margin-bottom: 0.25rem; }
-    p { font-size: 1.05rem; }
-    .meta { color: #444; margin-top: 0; }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      line-height: 1.2;
+      font-weight: 650;
+    }
+    .meta {
+      margin: 0.45rem 0 1.5rem;
+      color: #5c6b73;
+    }
+    .sheet {
+      background: #fff;
+      border: 1px solid #d5e3ee;
+      border-radius: 16px;
+      padding: 1.4rem 1.4rem 0.45rem;
+    }
+    .sheet p { margin: 0 0 1rem; }
   </style>
 </head>
 <body>
+  <!-- El logo oficial es el fondo. El texto de la política queda debajo. -->
+  <header class="fondo" role="img" aria-label="DAEH. Dirección de Servicios de Atención a Emergencias Extrahospitalarias."></header>
   <main>
     <h1>Política de privacidad</h1>
     <p class="meta">DAEH · Vigente desde el 20 de octubre de 2026</p>
-
-    <p>DAEH usa este canal de WhatsApp para recibir y atender solicitudes de su personal. Es responsable de los datos que se entregan por este medio.</p>
-
-    <p>Se tratan el número de WhatsApp, el nombre y la información que la persona incluye en su solicitud. Esos datos se usan solo para gestionar el trámite y se comparten con el personal de DAEH que debe atenderlo. WhatsApp, de Meta, transmite los mensajes.</p>
-
-    <p>Los datos no se venden ni se usan para publicidad. Se conservan el tiempo necesario para el trámite y para los registros laborales que DAEH deba guardar.</p>
-
-    <p>Para consultar, corregir o pedir la eliminación de un dato, la persona puede escribir por este mismo WhatsApp o dirigirse al área de personal de DAEH.</p>
+    <article class="sheet">
+      <p>DAEH usa este canal de WhatsApp para recibir y atender solicitudes de su personal. Es responsable de los datos que se entregan por este medio.</p>
+      <p>Se tratan el número de WhatsApp, el nombre y la información que la persona incluye en su solicitud. Esos datos se usan solo para gestionar el trámite y se comparten con el personal de DAEH que debe atenderlo. WhatsApp, de Meta, transmite los mensajes.</p>
+      <p>Los datos no se venden ni se usan para publicidad. Se conservan el tiempo necesario para el trámite y para los registros laborales que DAEH deba guardar.</p>
+      <p>Para consultar, corregir o pedir la eliminación de un dato, la persona puede escribir por este mismo WhatsApp o dirigirse al área de personal de DAEH.</p>
+    </article>
   </main>
 </body>
 </html>
